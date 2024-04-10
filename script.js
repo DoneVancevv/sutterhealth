@@ -1,3 +1,4 @@
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -39,21 +40,41 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButton.addEventListener('click', function () {
         videoPopup.style.display = 'none';
     });
-});
-// document.addEventListener('DOMContentLoaded', function () {
-//     const readMoreBtn = document.querySelector('.readmore');
-//     const additionalContent = document.querySelector('.readmore_content');
 
-//     if (readMoreBtn && additionalContent) {
-//         // Add event listener to the "Read more" button
-//         readMoreBtn.addEventListener('click', function () {
-//             // Toggle the visibility of the additional content
-//             additionalContent.style.display = additionalContent.style.display === 'none' ? 'block' : 'none';
-//             // Toggle the "clicked" class on the button
-//             readMoreBtn.classList.toggle('clicked');
-//         });
-//     } else {
-//         console.error('Read more button or additional content element not found.');
-//     }
+});
+
+
+
+$(".jsReadMore").click(function () {
+    $(".about-text").slideDown(500);
+    $(this).hide();
+});
+
+$(".jsReadLess").click(function () {
+    $(".about-text").slideUp(500);
+    $(".jsReadMore").show();
+});
+
+$(".jsReadMore").click(function (event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    $(".about-text").slideDown(500);
+    $(this).hide();
+});
+
+
+// $(".jsReadMore").click(function () {
+//     $(".about-text").slideDown(500);
+//     $(this).hide();
 // });
 
+window.addEventListener('scroll', function () {
+    var header = document.querySelector('header');
+    if (window.scrollY > 500) {
+        header.classList.add('fixed-header');
+    } else {
+        header.classList.remove('fixed-header');
+    }
+});
+
+
+jQuery.noConflict();
