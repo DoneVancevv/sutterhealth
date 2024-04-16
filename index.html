@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -31,7 +31,7 @@
                 id="menuButton">
                 <rect width="131" height="54" rx="6" fill="#1F3433" />
                 <g id="lines">
-                    <path d="M88 19H105" stroke="#01EFE1" stroke-width="2" stroke-linecap="round" />
+                    <path id="liness" d="M88 19H105" stroke="#01EFE1" stroke-width="2" stroke-linecap="round" />
                     <path d="M88 27H105" stroke="#01EFE1" stroke-width="2" stroke-linecap="round" />
                     <path d="M88 35H105" stroke="#01EFE1" stroke-width="2" stroke-linecap="round" />
                 </g>
@@ -168,6 +168,9 @@
                     patients, our
                     communities, and our organizational health.
                 </p>
+                <a class="btn-link jsReadMore">Read More<span></span></a>
+
+                </svg>
                 <div class="popup" id="videoPopup">
 
                     <span class="close" id="closeButton">&times;
@@ -188,98 +191,93 @@
                         src="https://players.brightcove.net/817826402001/79bcaa57-54d7-453c-9f1f-8ab3ef7b15de_default/index.html?videoId=6344694905112"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a class="btn-link jsReadMore">Read More<span></span></a>
-                <svg id="cross" width="16" height="15" viewBox="0 0 16 15" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1.5V13.5" stroke="#008080" stroke-width="3" stroke-linecap="round" />
-                    <path d="M14 7.5L2 7.5" stroke="#008080" stroke-width="3" stroke-linecap="round" />
-                </svg>
             </div>
-            <div class="about-text padded80">
 
-                <div class="about-text-title">
-                    <p>Annual letter continued</p>
-                </div>
+        </div>
+    </div>
+    <div class="about-text">
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                        <p>As a critical first step toward achieving our ambitious goals, in 2023 we redefined how
-                            Sutter operates and the way we deliver care. Our new organizational and market structures
-                            better align our leadership roles with our strategic priorities, elevate the voices and
-                            roles of physicians, and help us better serve our patients where they live, work and access
-                            care. The initial progress and momentum enable Sutter Health teams to work better together,
-                            coordinate and advance patient care, and keep making a difference for our patients and
-                            communities. </p>
+        <div class="about-text-title">
+            <p>Annual letter continued</p>
+        </div>
 
-                        <h3 class="font700 mt-40">Expanding Access to Care</h3>
-                        <p>Access to high-quality healthcare is one of the toughest and most significant healthcare
-                            issues facing California and the nation. In response, Sutter Health has made several
-                            meaningful investments to grow and serve more people. </p>
-                        <p>We’ve launched an $800 million, multi-year ambulatory growth plan to build 25 more care
-                            centers across Northern California and added Central Coast-based Sansum Clinic to our
-                            integrated system of healthcare. Another way we’re extending our impact is by accelerating
-                            our physician and clinician recruitment and expanding our 20 nationally accredited graduate
-                            medical education (GME) and other clinical training programs. We hired 732 physicians and
-                            advanced practice clinicians in 2023, and plan to train and graduate approximately 1,000
-                            physicians annually by 2030.</p>
-                        <p>We’re also making digital engagement and enablement a priority at Sutter Health. The
-                            foundational work we did in 2023 to simplify, streamline and upgrade our connective
-                            technologies will allow us to make it more convenient for our patients to access care and
-                            for our people to deliver it. </p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <p>As a critical first step toward achieving our ambitious goals, in 2023 we redefined how
+                    Sutter operates and the way we deliver care. Our new organizational and market structures
+                    better align our leadership roles with our strategic priorities, elevate the voices and
+                    roles of physicians, and help us better serve our patients where they live, work and access
+                    care. The initial progress and momentum enable Sutter Health teams to work better together,
+                    coordinate and advance patient care, and keep making a difference for our patients and
+                    communities. </p>
 
-                        <h3 class="font700 mt-40">Advancing Health Equity, Care Quality and Innovation</h3>
-                        <p>Sutter Health physicians, clinicians and hospitals routinely earn national recognition for
-                            the care they deliver, but our dedication to getting better never stops. We continue to
-                            raise the bar and relentlessly focus on improving health outcomes for our patients and
-                            communities.</p>
-                        <p> We’re also focused on driving health equity solutions within our system and across the
-                            country. In addition to the investments we’re making in the Sutter Institute for Advancing
-                            Health Equity, we’ve launched the nation’s first Doctor of Nursing Practice Fellowship,
-                            which aims to help reduce health disparities by developing the next generation of health
-                            equity-focused nurses. And we’re opening a major Innovation Center in San Francisco that
-                            will push the frontier of what's possible in healthcare.</p>
-                        <p>While we’re exceptionally proud of Sutter’s leadership and progress in these areas, we also
-                            know
-                            that we can’t do this alone. Our partnerships with state and community leaders and
-                            organizations
-                            are crucial to improving health outcomes for all Californians. This includes Sutter’s
-                            generous
-                            donors. We raised our highest-ever philanthropic funds in 2023, and we want to thank our
-                            donors
-                            for their ongoing belief in Sutter Health. Your support enables us to fund increased access,
-                            new
-                            care innovations and more. </p>
+                <h3 class="font700 mt-40">Expanding Access to Care</h3>
+                <p>Access to high-quality healthcare is one of the toughest and most significant healthcare
+                    issues facing California and the nation. In response, Sutter Health has made several
+                    meaningful investments to grow and serve more people. </p>
+                <p>We’ve launched an $800 million, multi-year ambulatory growth plan to build 25 more care
+                    centers across Northern California and added Central Coast-based Sansum Clinic to our
+                    integrated system of healthcare. Another way we’re extending our impact is by accelerating
+                    our physician and clinician recruitment and expanding our 20 nationally accredited graduate
+                    medical education (GME) and other clinical training programs. We hired 732 physicians and
+                    advanced practice clinicians in 2023, and plan to train and graduate approximately 1,000
+                    physicians annually by 2030.</p>
+                <p>We’re also making digital engagement and enablement a priority at Sutter Health. The
+                    foundational work we did in 2023 to simplify, streamline and upgrade our connective
+                    technologies will allow us to make it more convenient for our patients to access care and
+                    for our people to deliver it. </p>
 
-
-                        <h3 class="font700 mt-40">Investing in Our People</h3>
-                        <p>Our people are the secret sauce of Sutter Health—they are the most critical component of our
-                            ongoing progress and success. So, increasing the energy, optimism and connection among our
-                            teams is a huge priority for us. Infusing Diversity, Equity and Inclusion into every facet
-                            of our organization is also a major focus. We launched comprehensive plans for both of these
-                            important areas in 2023 and made significant progress that will fuel our advancements into
-                            the future. </p>
-
-                        <p>As you can see, 2023 was a transformative year for Sutter Health. We invite you to spend more
-                            time with our Annual Report, reading through even more of our accomplishments. You can also
-                            watch this terrific <a class="video-modal-open" data-video-modal="video1Modal">video</a>
-                            that celebrates some of the year’s highlights.</p>
+                <h3 class="font700 mt-40">Advancing Health Equity, Care Quality and Innovation</h3>
+                <p>Sutter Health physicians, clinicians and hospitals routinely earn national recognition for
+                    the care they deliver, but our dedication to getting better never stops. We continue to
+                    raise the bar and relentlessly focus on improving health outcomes for our patients and
+                    communities.</p>
+                <p> We’re also focused on driving health equity solutions within our system and across the
+                    country. In addition to the investments we’re making in the Sutter Institute for Advancing
+                    Health Equity, we’ve launched the nation’s first Doctor of Nursing Practice Fellowship,
+                    which aims to help reduce health disparities by developing the next generation of health
+                    equity-focused nurses. And we’re opening a major Innovation Center in San Francisco that
+                    will push the frontier of what's possible in healthcare.</p>
+                <p>While we’re exceptionally proud of Sutter’s leadership and progress in these areas, we also
+                    know
+                    that we can’t do this alone. Our partnerships with state and community leaders and
+                    organizations
+                    are crucial to improving health outcomes for all Californians. This includes Sutter’s
+                    generous
+                    donors. We raised our highest-ever philanthropic funds in 2023, and we want to thank our
+                    donors
+                    for their ongoing belief in Sutter Health. Your support enables us to fund increased access,
+                    new
+                    care innovations and more. </p>
 
 
-                        <p>Looking ahead, we have great momentum. And we’re confident that we’re going to do even more
-                            in 2024 and beyond to make Sutter Health the place people want to work and practice
-                            medicine, and where patients want to receive their care.</p>
-                        <p>Warm Regards,</p>
+                <h3 class="font700 mt-40">Investing in Our People</h3>
+                <p>Our people are the secret sauce of Sutter Health—they are the most critical component of our
+                    ongoing progress and success. So, increasing the energy, optimism and connection among our
+                    teams is a huge priority for us. Infusing Diversity, Equity and Inclusion into every facet
+                    of our organization is also a major focus. We launched comprehensive plans for both of these
+                    important areas in 2023 and made significant progress that will fuel our advancements into
+                    the future. </p>
 
-                        <p><strong>Ken McNeely</strong><br />Board Chair</p>
-                        <p class="mb-60"><strong>Warner Thomas</strong><br />President and Chief Executive Officer</p>
+                <p>As you can see, 2023 was a transformative year for Sutter Health. We invite you to spend more
+                    time with our Annual Report, reading through even more of our accomplishments. You can also
+                    watch this terrific <a class="video-modal-open" data-video-modal="video1Modal">video</a>
+                    that celebrates some of the year’s highlights.</p>
 
-                        <a class="btn-link btn-link-less jsReadLess">Read Less<span></span></a>
 
-                    </div>
-                </div>
-                <!--./row-->
+                <p>Looking ahead, we have great momentum. And we’re confident that we’re going to do even more
+                    in 2024 and beyond to make Sutter Health the place people want to work and practice
+                    medicine, and where patients want to receive their care.</p>
+                <p>Warm Regards,</p>
+
+                <p><strong>Ken McNeely</strong><br />Board Chair</p>
+                <p class="mb-60"><strong>Warner Thomas</strong><br />President and Chief Executive Officer</p>
+
+                <a class="btn-link btn-link-less jsReadLess">Read Less<span></span></a>
+
             </div>
         </div>
+        <!--./row-->
     </div>
     <div class="thinline1">
         <svg width="22" height="87" viewBox="0 0 22 87" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -454,7 +452,7 @@
         </svg>
     </div>
     <div class="title3">
-        <h2 id="bigtext2">Learn more about us</h2>
+        <a href="#" id="bigtext2">Learn more about us</a>
     </div>
     <div class="container4" id="container_1">
         <div class="mini_box">
