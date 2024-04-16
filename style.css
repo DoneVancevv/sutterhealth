@@ -377,10 +377,14 @@ svg path #menuButton {
     cursor: pointer;
 }
 
-#menuButton:hover {
-    transform: scale(1.1);
-
+#menuButton #lines path {
+    transition: stroke 400ms ease 0ms, transform 400ms ease 0ms;
 }
+
+/* #menuButton:hover #lines path {
+    stroke: #fff;
+    transform: rotate(45deg);
+} FOR THE LINES TO ROTATE */
 
 #menuButton:hover svg path,
 #menuButton:hover svg text {
@@ -403,9 +407,6 @@ svg path #menuButton {
     color: #34F2E7;
 }
 
-#bigtext2:hover {
-    color: #34F2E7;
-}
 
 .lastgridtext {
     padding-top: 50px;
@@ -605,6 +606,16 @@ svg path #menuButton {
     margin-top: 50px;
 }
 
+.title3 a {
+    font-weight: bold;
+    text-decoration: none !important;
+    color: black;
+}
+
+#bigtext2:hover {
+    color: #34F2E7;
+}
+
 @media only screen and (max-width: 500px) {
     .title3 {
         margin-top: 0px;
@@ -718,12 +729,14 @@ svg path #menuButton {
 }
 
 h1,
-h2 {
+h2,
+a {
     font-family: "Sora", sans-serif;
 }
 
 h3,
 h4,
+h5,
 p {
     font-family: "Roboto Serif",
         serif;
@@ -840,6 +853,13 @@ p {
     height: 359px;
 }
 
+@media only screen and (max-width: 500px) {
+    .menu-open {
+        width: 217px;
+        height: 450px;
+    }
+}
+
 .menu {
     display: none;
     position: absolute;
@@ -873,6 +893,12 @@ p {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 500px) {
+    #table1 {
+        display: block;
+    }
+}
+
 #table_title {
     display: flex;
     justify-items: flex-start;
@@ -886,12 +912,19 @@ p {
     height: 64px;
     top: 259px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     justify-items: center;
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 8px;
+}
+
+@media only screen and (max-width: 500px) {
+    .Learn-about {
+        width: 150px;
+        font-size: 10px;
+    }
 }
 
 #home_icon {
@@ -913,6 +946,8 @@ p {
     background-color: #fff;
     border: 1px solid #ccc;
     z-index: 1000;
+    box-shadow: 0 0 50px rgba(0, 128, 128, 1);
+    border: none;
 }
 
 /* Styles for the close button */
@@ -921,6 +956,7 @@ p {
     top: -60px;
     right: 10px;
     cursor: pointer;
+    color: #fff;
 }
 
 /* Styles for the iframe */
